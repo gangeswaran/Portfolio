@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                        <div class="logo-text">GangesWaran</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">RESUME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="./WhatsApp Image 2023-08-26 at 4.45.32 PM.jpeg" alt="profile photo">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>GangesWaran</h1>
+                    <p>Currently studying engineering  3rd yr at Government College of engineering,Bodiyanakanur. 
+
+                        Aspiring Full Stack Web Developer  |  Front-End Enthusiast  |  Eager Learner in Web Development and DSA.
+                        
+                        Enthusiastic Front-End Web Developer with a solid foundation in programming basics and front-end technologies. Skilled in creating visually appealing and user-friendly web applications. Currently exploring new opportunities and challenges to further enhance my expertise in front-end development. Excited to collaborate on projects that push the boundaries of web design and user experience</p>
+                        <div class="btn-group">
+                            <a href="./WhatsApp Image 2023-08-24 at 10.58.25 PM.jpeg" class="btn active">Download CV</a>
+                            <a href="#" class="btn">Contact</a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fas fa-mail-bulk    "></i></i></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+        
+        togglebtn.addEventListener("click", function(){
+           this.classList.toggle("click");
+           nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+        strings:["Frontend Developer", "Web Developer","Aspiring Full-Stack Developer"],
+        typedSpeed:70,
+        backSpeed:55,
+        loop:true
+    })
+    </script>
+</body>
+</html>
